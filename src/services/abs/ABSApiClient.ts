@@ -19,7 +19,8 @@ export class ABSApiClient {
         this.xmlParser = new XMLParser({
             ignoreAttributes: false,
             attributeNamePrefix: '',
-            textNodeName: '_text'
+            textNodeName: '_text',
+            removeNSPrefix: true
         });
 
         // Add response interceptor for logging
