@@ -40,10 +40,11 @@ export class ABSApiClient {
         );
     }
 
-    async getDataFlows() {
-        logger.info('Fetching dataflows from ABS API');
+    async getDataFlows(params?: any) {
+        logger.info('Fetching dataflows from ABS API', { params });
 
         const response = await this.api.get('/rest/dataflow', {
+            params,
             headers: {
                 'Accept': 'application/vnd.sdmx.structure+xml;version=2.1'
             }
@@ -120,9 +121,15 @@ export class ABSApiClient {
             }
         });
 
-        return options?.format?.startsWith('csv')
-            ? response.data
-            : this.xmlParser.parse(response.data);
+        if (options?.format?.startsWith('csv')) {
+            return response.data;
+        }
+
+        if (options?.format === 'jsondata' || (typeof response.data === 'object' && response.data !== null)) {
+            return response.data;
+        }
+
+        return this.xmlParser.parse(response.data);
     }
 
     private getAcceptHeader(format?: DataFormat): string {

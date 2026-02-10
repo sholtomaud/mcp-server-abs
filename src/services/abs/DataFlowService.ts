@@ -25,8 +25,8 @@ export class DataFlowService {
         });
     }
 
-    async getDataFlows(forceRefresh: boolean = false): Promise<DataFlow[]> {
-        logger.debug('Getting data flows', { forceRefresh });
+    async getDataFlows(forceRefresh: boolean = false, options?: { params?: any, limit?: number }): Promise<DataFlow[]> {
+        logger.debug('Getting data flows', { forceRefresh, options });
         try {
             if (!this.cache) {
                 logger.info('Cache not initialized, attempting to load from file');
@@ -35,7 +35,13 @@ export class DataFlowService {
 
             if (forceRefresh || !this.isCacheValid()) {
                 logger.info('Cache invalid or refresh forced, fetching new data');
-                const flows = await this.fetchDataFlows();
+                let flows = await this.fetchDataFlows(options?.params);
+
+                if (options?.limit) {
+                    logger.info('Limiting data flows', { limit: options.limit });
+                    flows = flows.slice(0, options.limit);
+                }
+
                 this.cache = {
                     lastUpdated: new Date(),
                     flows
@@ -75,10 +81,10 @@ export class DataFlowService {
         return this.apiClient.getDataFlow(flow.agencyID, flow.id, flow.version);
     }
 
-    private async fetchDataFlows(): Promise<DataFlow[]> {
-        logger.info('Fetching data flows');
+    private async fetchDataFlows(params?: any): Promise<DataFlow[]> {
+        logger.info('Fetching data flows', { params });
         try {
-            const parsed = await this.apiClient.getDataFlows();
+            const parsed = await this.apiClient.getDataFlows(params);
             return this.extractDataFlows(parsed);
         } catch (error) {
             logger.error('Error fetching data flows', { error });

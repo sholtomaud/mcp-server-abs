@@ -1,0 +1,130 @@
+{
+  "?xml": {
+    "version": "1.0",
+    "encoding": "utf-8"
+  },
+  "Structure": {
+    "Header": {
+      "ID": "IDREF12211",
+      "Test": false,
+      "Prepared": "2026-02-10T11:22:58.7725855+00:00",
+      "Sender": {
+        "id": "Unknown"
+      },
+      "Receiver": {
+        "id": "Unknown"
+      }
+    },
+    "Structures": {
+      "Dataflows": {
+        "Dataflow": [
+          {
+            "Annotations": {
+              "Annotation": {
+                "AnnotationType": "NonProductionDataflow",
+                "AnnotationText": {
+                  "_text": true,
+                  "lang": "en"
+                }
+              }
+            },
+            "Name": {
+              "_text": "Projected resident population, Aboriginal and Torres Strait Islander Australians, identification change series, sex and age groups by states and territories and Australia, 2021 to 2031",
+              "lang": "en"
+            },
+            "id": "ABORIGINAL_ID_POP_PROJ",
+            "agencyID": "ABS",
+            "version": "1.0",
+            "isExternalReference": "true",
+            "isFinal": "true",
+            "structureURL": "http://data.api.abs.gov.au/rest/dataflow/ABS/ABORIGINAL_ID_POP_PROJ/1.0"
+          },
+          {
+            "Annotations": {
+              "Annotation": {
+                "AnnotationType": "NonProductionDataflow",
+                "AnnotationText": {
+                  "_text": true,
+                  "lang": "en"
+                }
+              }
+            },
+            "Name": {
+              "_text": "Projected resident population, Aboriginal and Torres Strait Islander Australians, identification change series, sex and age groups by Remoteness Areas, 2021 to 2031",
+              "lang": "en"
+            },
+            "id": "ABORIGINAL_ID_POP_PROJ_REMOTE",
+            "agencyID": "ABS",
+            "version": "1.0",
+            "isExternalReference": "true",
+            "isFinal": "true",
+            "structureURL": "http://data.api.abs.gov.au/rest/dataflow/ABS/ABORIGINAL_ID_POP_PROJ_REMOTE/1.0"
+          },
+          {
+            "Annotations": {
+              "Annotation": {
+                "AnnotationType": "NonProductionDataflow",
+                "AnnotationText": {
+                  "_text": true,
+                  "lang": "en"
+                }
+              }
+            },
+            "Name": {
+              "_text": "Projected population, Aboriginal and Torres Strait Islander peoples, States and Territories, 2021 to 2031",
+              "lang": "en"
+            },
+            "id": "ABORIGINAL_POP_PROJ",
+            "agencyID": "ABS",
+            "version": "1.3.0",
+            "isExternalReference": "true",
+            "isFinal": "true",
+            "structureURL": "http://data.api.abs.gov.au/rest/dataflow/ABS/ABORIGINAL_POP_PROJ/1.3.0"
+          },
+          {
+            "Annotations": {
+              "Annotation": {
+                "AnnotationType": "NonProductionDataflow",
+                "AnnotationText": {
+                  "_text": true,
+                  "lang": "en"
+                }
+              }
+            },
+            "Name": {
+              "_text": "Projected population, Aboriginal and Torres Strait Islander peoples, Remoteness Areas, 2021 to 2031",
+              "lang": "en"
+            },
+            "id": "ABORIGINAL_POP_PROJ_REMOTE",
+            "agencyID": "ABS",
+            "version": "1.1.0",
+            "isExternalReference": "true",
+            "isFinal": "true",
+            "structureURL": "http://data.api.abs.gov.au/rest/dataflow/ABS/ABORIGINAL_POP_PROJ_REMOTE/1.1.0"
+          },
+          {
+            "Annotations": {
+              "Annotation": {
+                "AnnotationType": "NonProductionDataflow",
+                "AnnotationText": {
+                  "_text": true,
+                  "lang": "en"
+                }
+              }
+            },
+            "Name": {
+              "_text": "Projected population, Aboriginal and Torres Strait Islander Australians, Indigenous Regions, 2021 to 2031",
+              "lang": "en"
+            },
+            "id": "ABS_ABORIGINAL_POPPROJ_INDREGION",
+            "agencyID": "ABS",
+            "version": "1.2.0",
+            "isExternalReference": "true",
+            "isFinal": "true",
+            "structureURL": "http://data.api.abs.gov.au/rest/dataflow/ABS/ABS_ABORIGINAL_POPPROJ_INDREGION/1.2.0"
+          }
+        ]
+      }
+    }
+  }
+}

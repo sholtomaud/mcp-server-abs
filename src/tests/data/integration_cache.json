@@ -1,0 +1,40 @@
+{
+  "lastUpdated": "2026-02-10T11:33:02.624Z",
+  "flows": [
+    {
+      "id": "ABORIGINAL_ID_POP_PROJ",
+      "agencyID": "ABS",
+      "version": "1.0",
+      "name": "Projected resident population, Aboriginal and Torres Strait Islander Australians, identification change series, sex and age groups by states and territories and Australia, 2021 to 2031",
+      "description": ""
+    },
+    {
+      "id": "ABORIGINAL_ID_POP_PROJ_REMOTE",
+      "agencyID": "ABS",
+      "version": "1.0",
+      "name": "Projected resident population, Aboriginal and Torres Strait Islander Australians, identification change series, sex and age groups by Remoteness Areas, 2021 to 2031",
+      "description": ""
+    },
+    {
+      "id": "ABORIGINAL_POP_PROJ",
+      "agencyID": "ABS",
+      "version": "1.3.0",
+      "name": "Projected population, Aboriginal and Torres Strait Islander peoples, States and Territories, 2021 to 2031",
+      "description": ""
+    },
+    {
+      "id": "ABORIGINAL_POP_PROJ_REMOTE",
+      "agencyID": "ABS",
+      "version": "1.1.0",
+      "name": "Projected population, Aboriginal and Torres Strait Islander peoples, Remoteness Areas, 2021 to 2031",
+      "description": ""
+    },
+    {
+      "id": "ABS_ABORIGINAL_POPPROJ_INDREGION",
+      "agencyID": "ABS",
+      "version": "1.2.0",
+      "name": "Projected population, Aboriginal and Torres Strait Islander Australians, Indigenous Regions, 2021 to 2031",
+      "description": ""
+    }
+  ]
+}
