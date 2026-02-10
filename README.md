@@ -93,8 +93,8 @@ Comprehensive logging system using Winston:
 ## API Documentation
 
 For more information about the ABS Data API:
-- [SDMX-ML Documentation](https://data.gov.au/dataset/ds-dga-b1bc6077-dadd-4f61-9f8c-002ab2cdff10/details)
-- [ABS API Documentation](https://api.gov.au/service/f8880c48-2927-4e48-9945-46d36c8c4e11)
+- [ABS Data API User Guide](https://www.abs.gov.au/about/data-services/application-programming-interfaces-apis/data-api-user-guide)
+- [ABS Data API OpenAPI Specification](https://api.gov.au/assets/APIs/abs/DataAPI.openapi.html)
 
 ## Contributing
 
