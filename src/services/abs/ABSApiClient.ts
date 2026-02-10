@@ -40,10 +40,11 @@ export class ABSApiClient {
         );
     }
 
-    async getDataFlows() {
-        logger.info('Fetching dataflows from ABS API');
+    async getDataFlows(params?: any) {
+        logger.info('Fetching dataflows from ABS API', { params });
 
         const response = await this.api.get('/rest/dataflow', {
+            params,
             headers: {
                 'Accept': 'application/vnd.sdmx.structure+xml;version=2.1'
             }

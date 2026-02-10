@@ -52,6 +52,8 @@ export type DataFormat =
 export interface DataQueryOptions {
     startPeriod?: string;
     endPeriod?: string;
+    lastNObservations?: number;
+    firstNObservations?: number;
     format?: DataFormat;
     detail?: 'full' | 'dataonly' | 'serieskeysonly' | 'nodata';
     dimensionAtObservation?: 'TIME_PERIOD' | 'AllDimensions' | string;
