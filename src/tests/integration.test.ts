@@ -70,4 +70,42 @@ describe('ABS API Integration Tests', () => {
         await handleSnapshot(`data_${datasetId}`, data);
         expect(data).toBeDefined();
     });
+
+    it('should snapshot MCP tool output format for query_dataset', { timeout: TIMEOUT }, async () => {
+        const datasetId = 'CPI';
+        const data = await dataFlowService.getFlowData(datasetId, 'all', {
+            startPeriod: '2023-Q1',
+            endPeriod: '2023-Q1',
+            format: 'jsondata'
+        });
+
+        // Simulating the MCP tool response structure from src/index.ts
+        const mcpToolResponse = {
+            content: [
+                {
+                    type: "text",
+                    text: typeof data === 'string' ? data : JSON.stringify(data, null, 2)
+                }
+            ]
+        };
+
+        await handleSnapshot(`mcp_response_query_${datasetId}`, mcpToolResponse);
+    });
+
+    it('should snapshot MCP resource output format for dataflows', { timeout: TIMEOUT }, async () => {
+        const flows = await dataFlowService.getDataFlows();
+
+        // Simulating the MCP resource response structure from src/index.ts
+        const mcpResourceResponse = {
+            contents: [
+                {
+                    uri: "abs://dataflows",
+                    mimeType: "application/json",
+                    text: JSON.stringify(flows, null, 2)
+                }
+            ]
+        };
+
+        await handleSnapshot('mcp_resource_dataflows', mcpResourceResponse);
+    });
 });

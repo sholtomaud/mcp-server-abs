@@ -49,6 +49,16 @@ function normalizeData(data: any): any {
             }
         }
         return normalized;
+    } else if (typeof data === 'string') {
+        // Try to parse as JSON to normalize nested dynamic fields in strings (common in MCP responses)
+        try {
+            const parsed = JSON.parse(data);
+            if (typeof parsed === 'object' && parsed !== null) {
+                return JSON.stringify(normalizeData(parsed), null, 2);
+            }
+        } catch (e) {
+            // Not JSON, return as is
+        }
     }
     return data;
 }
