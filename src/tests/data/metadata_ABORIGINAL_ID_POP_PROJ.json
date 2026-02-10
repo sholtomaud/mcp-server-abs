@@ -1,0 +1,6500 @@
+{
+  "?xml": {
+    "version": "1.0",
+    "encoding": "utf-8"
+  },
+  "Structure": {
+    "Header": {
+      "ID": "IDREF6711",
+      "Test": false,
+      "Prepared": "2026-02-10T11:24:05.2937027+00:00",
+      "Sender": {
+        "id": "Unknown"
+      },
+      "Receiver": {
+        "id": "Unknown"
+      }
+    },
+    "Structures": {
+      "Dataflows": {
+        "Dataflow": {
+          "Annotations": {
+            "Annotation": [
+              {
+                "AnnotationType": "NonProductionDataflow",
+                "AnnotationText": {
+                  "_text": true,
+                  "lang": "en"
+                }
+              },
+              {
+                "AnnotationTitle": "SERIES,FREQUENCY,MEASURE,SEX_ABS,AGE",
+                "AnnotationType": "LAYOUT_ROW_SECTION",
+                "id": "LAYOUT_ROW_SECTION"
+              },
+              {
+                "AnnotationTitle": "TIME_PERIOD",
+                "AnnotationType": "LAYOUT_COLUMN",
+                "id": "LAYOUT_COLUMN"
+              },
+              {
+                "AnnotationTitle": "ASGS_2011",
+                "AnnotationType": "LAYOUT_ROW",
+                "id": "LAYOUT_ROW"
+              }
+            ]
+          },
+          "Name": {
+            "_text": "Projected resident population, Aboriginal and Torres Strait Islander Australians, identification change series, sex and age groups by states and territories and Australia, 2021 to 2031",
+            "lang": "en"
+          },
+          "Description": {
+            "_text": "Contains estimates and projections of the Aboriginal and Torres Strait Islander population based on the 2021 Census of Population and Housing, by sex and five-year age groups, for the period 2006 to 2031. Population projections illustrate how the Australian Aboriginal and Torres Strait Islander population would change in the future as a result of certain assumptions. This dataset presents 9 scenarios, comprising combinations of different rates of fertility, paternity, mortality, interstate migration and overseas migration. Unit of measure: Projected Persons. Geographic coverage: Australia/State. Catalogue number: 3238.0",
+            "lang": "en"
+          },
+          "Structure": {
+            "Ref": {
+              "id": "ABORIGINAL_ID_POP_PROJ",
+              "version": "1.0",
+              "agencyID": "ABS",
+              "package": "datastructure",
+              "class": "DataStructure"
+            }
+          },
+          "id": "ABORIGINAL_ID_POP_PROJ",
+          "agencyID": "ABS",
+          "version": "1.0",
+          "isFinal": "true"
+        }
+      },
+      "CategorySchemes": {
+        "CategoryScheme": {
+          "Name": {
+            "_text": "People",
+            "lang": "en"
+          },
+          "Category": [
+            {
+              "Name": {
+                "_text": "Population",
+                "lang": "en"
+              },
+              "Category": [
+                {
+                  "Name": {
+                    "_text": "Estimated Resident Population",
+                    "lang": "en"
+                  },
+                  "id": "ERP"
+                },
+                {
+                  "Name": {
+                    "_text": "Interstate Migration",
+                    "lang": "en"
+                  },
+                  "id": "INTERSTATE_MIGRATION"
+                },
+                {
+                  "Name": {
+                    "_text": "Overseas Migration",
+                    "lang": "en"
+                  },
+                  "id": "OVERSEAS_MIGRATION"
+                },
+                {
+                  "Name": {
+                    "_text": "Regional Internal Migration",
+                    "lang": "en"
+                  },
+                  "id": "RIM"
+                },
+                {
+                  "Name": {
+                    "_text": "Births",
+                    "lang": "en"
+                  },
+                  "id": "BIRTHS"
+                },
+                {
+                  "Name": {
+                    "_text": "Deaths",
+                    "lang": "en"
+                  },
+                  "id": "DEATHS"
+                },
+                {
+                  "Name": {
+                    "_text": "Population Projections",
+                    "lang": "en"
+                  },
+                  "id": "POP_PROJ"
+                }
+              ],
+              "id": "POPULATION"
+            },
+            {
+              "Name": {
+                "_text": "People and communities",
+                "lang": "en"
+              },
+              "id": "PEOPLE_COMMUNITIES"
+            },
+            {
+              "Name": {
+                "_text": "Aboriginal and Torres Strait Islander Peoples",
+                "lang": "en"
+              },
+              "id": "ATSIP"
+            },
+            {
+              "Name": {
+                "_text": "Crime and justice",
+                "lang": "en"
+              },
+              "id": "CRIME_JUSTICE"
+            },
+            {
+              "Name": {
+                "_text": "Education",
+                "lang": "en"
+              },
+              "id": "EDUCATION"
+            },
+            {
+              "Name": {
+                "_text": "Housing",
+                "lang": "en"
+              },
+              "id": "HOUSING"
+            }
+          ],
+          "id": "PEOPLE",
+          "agencyID": "ABS",
+          "version": "1.0.0",
+          "isFinal": "true"
+        }
+      },
+      "Categorisations": {
+        "Categorisation": {
+          "Name": {
+            "_text": "Projected resident population, Aboriginal and Torres Strait Islander Australians, identification change series, sex and age groups by states and territories and Australia, 2021 to 2031",
+            "lang": "en"
+          },
+          "Source": {
+            "Ref": {
+              "id": "ABORIGINAL_ID_POP_PROJ",
+              "version": "1.0",
+              "agencyID": "ABS",
+              "package": "datastructure",
+              "class": "Dataflow"
+            }
+          },
+          "Target": {
+            "Ref": {
+              "id": "ATSIP",
+              "maintainableParentID": "PEOPLE",
+              "maintainableParentVersion": "1.0.0",
+              "agencyID": "ABS",
+              "package": "categoryscheme",
+              "class": "Category"
+            }
+          },
+          "id": "CAT_ABORIGINAL_ID_POP_PROJ",
+          "agencyID": "ABS",
+          "version": "1.0",
+          "isFinal": "true"
+        }
+      },
+      "Codelists": {
+        "Codelist": [
+          {
+            "Name": {
+              "_text": "Age",
+              "lang": "en"
+            },
+            "Code": [
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 117,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "0 - 4",
+                  "lang": "en"
+                },
+                "id": "A04"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 1,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 0,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A04"
+                  }
+                },
+                "id": "0"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 2,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 1,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A04"
+                  }
+                },
+                "id": "1"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 3,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 2,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A04"
+                  }
+                },
+                "id": "2"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 4,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 3,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A04"
+                  }
+                },
+                "id": "3"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 5,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 4,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A04"
+                  }
+                },
+                "id": "4"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 118,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "5 - 9",
+                  "lang": "en"
+                },
+                "id": "A59"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 6,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 5,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A59"
+                  }
+                },
+                "id": "5"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 7,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 6,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A59"
+                  }
+                },
+                "id": "6"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 8,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 7,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A59"
+                  }
+                },
+                "id": "7"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 9,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 8,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A59"
+                  }
+                },
+                "id": "8"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 10,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 9,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A59"
+                  }
+                },
+                "id": "9"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 119,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "10 - 14",
+                  "lang": "en"
+                },
+                "id": "A10"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 11,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 10,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A10"
+                  }
+                },
+                "id": "10"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 12,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 11,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A10"
+                  }
+                },
+                "id": "11"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 13,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 12,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A10"
+                  }
+                },
+                "id": "12"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 14,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 13,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A10"
+                  }
+                },
+                "id": "13"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 15,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 14,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A10"
+                  }
+                },
+                "id": "14"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 120,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "15 - 19",
+                  "lang": "en"
+                },
+                "id": "A15"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 16,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 15,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A15"
+                  }
+                },
+                "id": "15"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 17,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 16,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A15"
+                  }
+                },
+                "id": "16"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 18,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 17,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A15"
+                  }
+                },
+                "id": "17"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 19,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 18,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A15"
+                  }
+                },
+                "id": "18"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 20,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 19,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A15"
+                  }
+                },
+                "id": "19"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 121,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "20 - 24",
+                  "lang": "en"
+                },
+                "id": "A20"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 21,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 20,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A20"
+                  }
+                },
+                "id": "20"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 22,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 21,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A20"
+                  }
+                },
+                "id": "21"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 23,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 22,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A20"
+                  }
+                },
+                "id": "22"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 24,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 23,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A20"
+                  }
+                },
+                "id": "23"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 25,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 24,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A20"
+                  }
+                },
+                "id": "24"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 122,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "25 - 29",
+                  "lang": "en"
+                },
+                "id": "A25"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 26,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 25,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A25"
+                  }
+                },
+                "id": "25"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 27,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 26,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A25"
+                  }
+                },
+                "id": "26"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 28,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 27,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A25"
+                  }
+                },
+                "id": "27"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 29,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 28,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A25"
+                  }
+                },
+                "id": "28"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 30,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 29,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A25"
+                  }
+                },
+                "id": "29"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 123,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "30 - 34",
+                  "lang": "en"
+                },
+                "id": "A30"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 31,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 30,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A30"
+                  }
+                },
+                "id": "30"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 32,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 31,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A30"
+                  }
+                },
+                "id": "31"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 33,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 32,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A30"
+                  }
+                },
+                "id": "32"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 34,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 33,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A30"
+                  }
+                },
+                "id": "33"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 35,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 34,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A30"
+                  }
+                },
+                "id": "34"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 124,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "35 - 39",
+                  "lang": "en"
+                },
+                "id": "A35"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 36,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 35,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A35"
+                  }
+                },
+                "id": "35"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 37,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 36,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A35"
+                  }
+                },
+                "id": "36"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 38,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 37,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A35"
+                  }
+                },
+                "id": "37"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 39,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 38,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A35"
+                  }
+                },
+                "id": "38"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 40,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 39,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A35"
+                  }
+                },
+                "id": "39"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 125,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "40 - 44",
+                  "lang": "en"
+                },
+                "id": "A40"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 41,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 40,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A40"
+                  }
+                },
+                "id": "40"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 42,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 41,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A40"
+                  }
+                },
+                "id": "41"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 43,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 42,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A40"
+                  }
+                },
+                "id": "42"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 44,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 43,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A40"
+                  }
+                },
+                "id": "43"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 45,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 44,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A40"
+                  }
+                },
+                "id": "44"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 126,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "45 - 49",
+                  "lang": "en"
+                },
+                "id": "A45"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 46,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 45,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A45"
+                  }
+                },
+                "id": "45"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 47,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 46,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A45"
+                  }
+                },
+                "id": "46"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 48,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 47,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A45"
+                  }
+                },
+                "id": "47"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 49,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 48,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A45"
+                  }
+                },
+                "id": "48"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 50,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 49,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A45"
+                  }
+                },
+                "id": "49"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 127,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "50 - 54",
+                  "lang": "en"
+                },
+                "id": "A50"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 51,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 50,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A50"
+                  }
+                },
+                "id": "50"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 52,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 51,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A50"
+                  }
+                },
+                "id": "51"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 53,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 52,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A50"
+                  }
+                },
+                "id": "52"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 54,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 53,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A50"
+                  }
+                },
+                "id": "53"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 55,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 54,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A50"
+                  }
+                },
+                "id": "54"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 128,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "55 - 59",
+                  "lang": "en"
+                },
+                "id": "A55"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 56,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 55,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A55"
+                  }
+                },
+                "id": "55"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 57,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 56,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A55"
+                  }
+                },
+                "id": "56"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 58,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 57,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A55"
+                  }
+                },
+                "id": "57"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 59,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 58,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A55"
+                  }
+                },
+                "id": "58"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 60,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 59,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A55"
+                  }
+                },
+                "id": "59"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 129,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "60 - 64",
+                  "lang": "en"
+                },
+                "id": "A60"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 61,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 60,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A60"
+                  }
+                },
+                "id": "60"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 62,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 61,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A60"
+                  }
+                },
+                "id": "61"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 63,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 62,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A60"
+                  }
+                },
+                "id": "62"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 64,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 63,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A60"
+                  }
+                },
+                "id": "63"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 65,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 64,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A60"
+                  }
+                },
+                "id": "64"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 130,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "65 - 69",
+                  "lang": "en"
+                },
+                "id": "A65"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 66,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 65,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A65"
+                  }
+                },
+                "id": "65"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 67,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 66,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A65"
+                  }
+                },
+                "id": "66"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 68,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 67,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A65"
+                  }
+                },
+                "id": "67"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 69,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 68,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A65"
+                  }
+                },
+                "id": "68"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 70,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 69,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A65"
+                  }
+                },
+                "id": "69"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 131,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "70 - 74",
+                  "lang": "en"
+                },
+                "id": "A70"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 71,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 70,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A70"
+                  }
+                },
+                "id": "70"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 72,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 71,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A70"
+                  }
+                },
+                "id": "71"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 73,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 72,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A70"
+                  }
+                },
+                "id": "72"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 74,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 73,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A70"
+                  }
+                },
+                "id": "73"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 75,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 74,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A70"
+                  }
+                },
+                "id": "74"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 132,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "75 - 79",
+                  "lang": "en"
+                },
+                "id": "A75"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 76,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 75,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A75"
+                  }
+                },
+                "id": "75"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 77,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 76,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A75"
+                  }
+                },
+                "id": "76"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 78,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 77,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A75"
+                  }
+                },
+                "id": "77"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 79,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 78,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A75"
+                  }
+                },
+                "id": "78"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 80,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 79,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A75"
+                  }
+                },
+                "id": "79"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 133,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "80 - 84",
+                  "lang": "en"
+                },
+                "id": "A80"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 81,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 80,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A80"
+                  }
+                },
+                "id": "80"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 82,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 81,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A80"
+                  }
+                },
+                "id": "81"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 83,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 82,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A80"
+                  }
+                },
+                "id": "82"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 84,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 83,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A80"
+                  }
+                },
+                "id": "83"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 85,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 84,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A80"
+                  }
+                },
+                "id": "84"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 134,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "85 - 89",
+                  "lang": "en"
+                },
+                "id": "A85"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 86,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 85,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A85"
+                  }
+                },
+                "id": "85"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 87,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 86,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A85"
+                  }
+                },
+                "id": "86"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 88,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 87,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A85"
+                  }
+                },
+                "id": "87"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 89,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 88,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A85"
+                  }
+                },
+                "id": "88"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 90,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 89,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A85"
+                  }
+                },
+                "id": "89"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 135,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "90 - 94",
+                  "lang": "en"
+                },
+                "id": "A90"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 91,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 90,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A90"
+                  }
+                },
+                "id": "90"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 92,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 91,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A90"
+                  }
+                },
+                "id": "91"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 93,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 92,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A90"
+                  }
+                },
+                "id": "92"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 94,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 93,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A90"
+                  }
+                },
+                "id": "93"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 95,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 94,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A90"
+                  }
+                },
+                "id": "94"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 136,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "95 - 99",
+                  "lang": "en"
+                },
+                "id": "A95"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 96,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 95,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A95"
+                  }
+                },
+                "id": "95"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 97,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 96,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A95"
+                  }
+                },
+                "id": "96"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 98,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 97,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A95"
+                  }
+                },
+                "id": "97"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 99,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 98,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A95"
+                  }
+                },
+                "id": "98"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 100,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 99,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A95"
+                  }
+                },
+                "id": "99"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 137,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "100 and over",
+                  "lang": "en"
+                },
+                "id": "A99"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 101,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 100,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "100"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 102,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 101,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "101"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 103,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 102,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "102"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 104,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 103,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "103"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 105,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 104,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "104"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 106,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 105,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "105"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 107,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 106,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "106"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 108,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 107,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "107"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 109,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 108,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "108"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 110,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 109,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "109"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 111,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 110,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "110"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 112,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 111,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "111"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 113,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 112,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "112"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 114,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 113,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "113"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 115,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 114,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "114"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 116,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": 115,
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "A99"
+                  }
+                },
+                "id": "115"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 138,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "100 years and over",
+                  "lang": "en"
+                },
+                "id": "A100"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 139,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "15 years and over",
+                  "lang": "en"
+                },
+                "id": "O15"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 140,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "65 years and over",
+                  "lang": "en"
+                },
+                "id": "O65"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 141,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "75 years and over",
+                  "lang": "en"
+                },
+                "id": "O75"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 142,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "85 years and over",
+                  "lang": "en"
+                },
+                "id": "O85"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 143,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "0 - 14",
+                  "lang": "en"
+                },
+                "id": "T0"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 144,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "5 - 14",
+                  "lang": "en"
+                },
+                "id": "T5"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 145,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "15 - 24",
+                  "lang": "en"
+                },
+                "id": "T15"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 146,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "25 - 34",
+                  "lang": "en"
+                },
+                "id": "T25"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 147,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "35 - 44",
+                  "lang": "en"
+                },
+                "id": "T35"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 148,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "45 - 54",
+                  "lang": "en"
+                },
+                "id": "T45"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 149,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "55 - 64",
+                  "lang": "en"
+                },
+                "id": "T55"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 150,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "65 - 74",
+                  "lang": "en"
+                },
+                "id": "T65"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 151,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "75 - 84",
+                  "lang": "en"
+                },
+                "id": "T75"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 163,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "All ages",
+                  "lang": "en"
+                },
+                "id": "TT"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 152,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "0 - 15",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "TT"
+                  }
+                },
+                "id": "0015"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 153,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "15 and under",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "TT"
+                  }
+                },
+                "id": "1500"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 154,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "50 and over",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "TT"
+                  }
+                },
+                "id": "5099"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 155,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "55 - 59",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "TT"
+                  }
+                },
+                "id": "5559"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 156,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "60 and over",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "TT"
+                  }
+                },
+                "id": "6099"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 158,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "0 - 14",
+                  "lang": "en"
+                },
+                "id": "0014"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 159,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "15 - 24",
+                  "lang": "en"
+                },
+                "id": "1524"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 160,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "25 - 44",
+                  "lang": "en"
+                },
+                "id": "2544"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 161,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "45 - 64",
+                  "lang": "en"
+                },
+                "id": "4564"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 162,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "65 and over",
+                  "lang": "en"
+                },
+                "id": "6599"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 157,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "85 and over",
+                  "lang": "en"
+                },
+                "id": "8599"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 164,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Total",
+                  "lang": "en"
+                },
+                "id": "TOT"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 165,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Age and/or gender nfd.",
+                  "lang": "en"
+                },
+                "id": "AGE_NFD"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 166,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "15 - 64",
+                  "lang": "en"
+                },
+                "id": "1564"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 167,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "18 - 19",
+                  "lang": "en"
+                },
+                "id": "1819"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 168,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "49 years and over",
+                  "lang": "en"
+                },
+                "id": "4999"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 169,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "59 years and over",
+                  "lang": "en"
+                },
+                "id": "5999"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 170,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "1 - 4",
+                  "lang": "en"
+                },
+                "id": "0104"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 171,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "5 - 14",
+                  "lang": "en"
+                },
+                "id": "0514"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 172,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "15 - 19",
+                  "lang": "en"
+                },
+                "id": "1519"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 173,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "25 - 34",
+                  "lang": "en"
+                },
+                "id": "2534"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 174,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "35 - 44",
+                  "lang": "en"
+                },
+                "id": "3544"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 175,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "45 - 54",
+                  "lang": "en"
+                },
+                "id": "4554"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 176,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "55 - 64",
+                  "lang": "en"
+                },
+                "id": "5564"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 177,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "65 - 74",
+                  "lang": "en"
+                },
+                "id": "6574"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 178,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "75 and over",
+                  "lang": "en"
+                },
+                "id": "7599"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 179,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "105 and over",
+                  "lang": "en"
+                },
+                "id": "10599"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 180,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "75 and over",
+                  "lang": "en"
+                },
+                "id": "75OVER"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 181,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "15 and over",
+                  "lang": "en"
+                },
+                "id": "1599"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 182,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "20 and over",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "1599"
+                  }
+                },
+                "id": "2099"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 183,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "20 - 24",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "2099"
+                  }
+                },
+                "id": "2024"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 184,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "25 - 29",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "2099"
+                  }
+                },
+                "id": "2529"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 185,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "30 - 34",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "2099"
+                  }
+                },
+                "id": "3034"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 186,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "35 - 39",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "2099"
+                  }
+                },
+                "id": "3539"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 187,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "40 - 44",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "2099"
+                  }
+                },
+                "id": "4044"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 188,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "45 - 49",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "2099"
+                  }
+                },
+                "id": "4549"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 189,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "50 - 54",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "2099"
+                  }
+                },
+                "id": "5054"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 190,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "60 - 64",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "2099"
+                  }
+                },
+                "id": "6064"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 191,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "65 - 69",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "2099"
+                  }
+                },
+                "id": "6569"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 192,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "70 and over",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "2099"
+                  }
+                },
+                "id": "7099"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 193,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Overseas Visitors",
+                  "lang": "en"
+                },
+                "id": "V"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 194,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Not stated",
+                  "lang": "en"
+                },
+                "id": "999"
+              }
+            ],
+            "id": "CL_AGE",
+            "agencyID": "ABS",
+            "version": "1.0.0",
+            "isFinal": "true"
+          },
+          {
+            "Name": {
+              "_text": "Region",
+              "lang": "en"
+            },
+            "Code": [
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 1,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Australia",
+                  "lang": "en"
+                },
+                "id": "0"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 2,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "New South Wales",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "0"
+                  }
+                },
+                "id": "1"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 3,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Victoria",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "0"
+                  }
+                },
+                "id": "2"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 4,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Queensland",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "0"
+                  }
+                },
+                "id": "3"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 5,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "South Australia",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "0"
+                  }
+                },
+                "id": "4"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 6,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Western Australia",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "0"
+                  }
+                },
+                "id": "5"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 7,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Tasmania",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "0"
+                  }
+                },
+                "id": "6"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 8,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Northern Territory",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "0"
+                  }
+                },
+                "id": "7"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 9,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Australian Capital Territory",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "0"
+                  }
+                },
+                "id": "8"
+              }
+            ],
+            "id": "CL_ASGS_STATE",
+            "agencyID": "ABS",
+            "version": "1.0.0",
+            "isFinal": "true"
+          },
+          {
+            "Name": {
+              "_text": "Main projection Series",
+              "lang": "en"
+            },
+            "Code": [
+              {
+                "Annotations": {
+                  "Annotation": [
+                    {
+                      "AnnotationType": "ORDER",
+                      "AnnotationText": {
+                        "_text": 1,
+                        "lang": "en"
+                      }
+                    },
+                    {
+                      "AnnotationType": "FURTHER_INFORMATION",
+                      "AnnotationText": {
+                        "_text": "High series: Constant fertility rates as observed in 2016, annual increase of 2% in paternity rates, Aboriginal and Torres Strait Islander life expectancy at birth increases by 0.45 years per year for males and 0.35 years per year for females, constant levels of interstate migration as observed in the 2016 Census, no overseas migration.",
+                        "lang": "en"
+                      }
+                    }
+                  ]
+                },
+                "Name": {
+                  "_text": "High series",
+                  "lang": "en"
+                },
+                "id": "1"
+              },
+              {
+                "Annotations": {
+                  "Annotation": [
+                    {
+                      "AnnotationType": "ORDER",
+                      "AnnotationText": {
+                        "_text": 2,
+                        "lang": "en"
+                      }
+                    },
+                    {
+                      "AnnotationType": "FURTHER_INFORMATION",
+                      "AnnotationText": {
+                        "_text": "Medium series: Annual decrease of 1% in fertility rates, annual increase of 1% in paternity rates, Aboriginal and Torres Strait Islander life expectancy at birth increases by 0.40 years per year for males and 0.25 years per year for females, constant levels of interstate migration as observed in the 2016 Census, no overseas migration.",
+                        "lang": "en"
+                      }
+                    }
+                  ]
+                },
+                "Name": {
+                  "_text": "Medium series",
+                  "lang": "en"
+                },
+                "id": "2"
+              },
+              {
+                "Annotations": {
+                  "Annotation": [
+                    {
+                      "AnnotationType": "ORDER",
+                      "AnnotationText": {
+                        "_text": 3,
+                        "lang": "en"
+                      }
+                    },
+                    {
+                      "AnnotationType": "FURTHER_INFORMATION",
+                      "AnnotationText": {
+                        "_text": "Low series: Annual decrease of 1.5% in fertility rates, constant paternity rates as observed in 2016, Aboriginal and Torres Strait Islander life expectancy at birth increases by 0.25 years per year for males and 0.20 years per year for females, constant levels of interstate migration as observed in the 2016 Census, no overseas migration.",
+                        "lang": "en"
+                      }
+                    }
+                  ]
+                },
+                "Name": {
+                  "_text": "Low series",
+                  "lang": "en"
+                },
+                "id": "3"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 10,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Identification change series",
+                  "lang": "en"
+                },
+                "id": "10"
+              }
+            ],
+            "id": "CL_DEMOG_PROJ_SERIES",
+            "agencyID": "ABS",
+            "version": "1.2",
+            "isFinal": "true"
+          },
+          {
+            "Name": {
+              "_text": "Frequency",
+              "lang": "en"
+            },
+            "Code": [
+              {
+                "Name": {
+                  "_text": "Hourly",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "To be used for data collected or disseminated every hour.",
+                  "lang": "en"
+                },
+                "id": "H"
+              },
+              {
+                "Name": {
+                  "_text": "Daily",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "To be used for data collected or disseminated every day.",
+                  "lang": "en"
+                },
+                "id": "D"
+              },
+              {
+                "Name": {
+                  "_text": "Minutely",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "While N denotes \"minutely\", usually, there may be no observations every minute (for several series the frequency is usually \"irregular\" within a day/days). And though observations may be sparse (not collected or disseminated every minute), missing values do not need to be given for the minutes when no observations exist: in any case the time stamp determines when an observation is observed.",
+                  "lang": "en"
+                },
+                "id": "N"
+              },
+              {
+                "Name": {
+                  "_text": "Daily or businessweek",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "Similar to \"daily\", however there are no observations for Saturdays and Sundays (so, neither \"missing values\" nor \"numeric values\" should be provided for Saturday and Sunday). This treatment (\"business\") is one way to deal with such cases, but it is not the only option. Such a time series could alternatively be considered daily (\"D\"), thus, with missing values in the weekend.",
+                  "lang": "en"
+                },
+                "id": "B"
+              },
+              {
+                "Name": {
+                  "_text": "Weekly",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "To be used for data collected or disseminated every week.",
+                  "lang": "en"
+                },
+                "id": "W"
+              },
+              {
+                "Name": {
+                  "_text": "Half-yearly, semester",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "To be used for data collected or disseminated every semester.",
+                  "lang": "en"
+                },
+                "id": "S"
+              },
+              {
+                "Name": {
+                  "_text": "Annual",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "To be used for data collected or disseminated every year.",
+                  "lang": "en"
+                },
+                "id": "A"
+              },
+              {
+                "Name": {
+                  "_text": "Monthly",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "To be used for data collected or disseminated every month.",
+                  "lang": "en"
+                },
+                "id": "M"
+              },
+              {
+                "Name": {
+                  "_text": "Quarterly",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "To be used for data collected or disseminated every quarter.",
+                  "lang": "en"
+                },
+                "id": "Q"
+              }
+            ],
+            "id": "CL_FREQ",
+            "agencyID": "ABS",
+            "version": "1.0.0",
+            "isFinal": "true"
+          },
+          {
+            "Name": {
+              "_text": "Observation Status",
+              "lang": "en"
+            },
+            "Code": [
+              {
+                "Name": {
+                  "_text": "estimate",
+                  "lang": "en"
+                },
+                "id": "k"
+              },
+              {
+                "Name": {
+                  "_text": "not elsewhere included",
+                  "lang": "en"
+                },
+                "id": "l"
+              },
+              {
+                "Name": {
+                  "_text": "not recorded",
+                  "lang": "en"
+                },
+                "id": "m"
+              },
+              {
+                "Name": {
+                  "_text": "not available for publication but included in totals where applicable, unless otherwise indicated",
+                  "lang": "en"
+                },
+                "id": "n"
+              },
+              {
+                "Name": {
+                  "_text": "nil or rounded to zero, including null cells",
+                  "lang": "en"
+                },
+                "id": "o"
+              },
+              {
+                "Name": {
+                  "_text": "preliminary figure or series subject to revision",
+                  "lang": "en"
+                },
+                "id": "p"
+              },
+              {
+                "Name": {
+                  "_text": "not available",
+                  "lang": "en"
+                },
+                "id": "q"
+              },
+              {
+                "Name": {
+                  "_text": "revised",
+                  "lang": "en"
+                },
+                "id": "r"
+              },
+              {
+                "Name": {
+                  "_text": "not currently available due to break in time series",
+                  "lang": "en"
+                },
+                "id": "s"
+              },
+              {
+                "Name": {
+                  "_text": "not yet available",
+                  "lang": "en"
+                },
+                "id": "t"
+              },
+              {
+                "Name": {
+                  "_text": "not applicable",
+                  "lang": "en"
+                },
+                "id": "u"
+              },
+              {
+                "Name": {
+                  "_text": "not available for publication but included in totals where applicable, unless otherwise indicated",
+                  "lang": "en"
+                },
+                "id": "v"
+              },
+              {
+                "Name": {
+                  "_text": "estimate is subject to sampling variability too high for most practical purposes",
+                  "lang": "en"
+                },
+                "id": "w"
+              },
+              {
+                "Name": {
+                  "_text": "estimate has a relative standard error of 10% to less than 25% and should be used with caution",
+                  "lang": "en"
+                },
+                "id": "x"
+              },
+              {
+                "Name": {
+                  "_text": "estimate has a relative standard error between 25% and 50% and should be used with caution",
+                  "lang": "en"
+                },
+                "id": "y"
+              },
+              {
+                "Name": {
+                  "_text": "estimate has a relative standard error greater than 50% and is considered too unreliable for general use",
+                  "lang": "en"
+                },
+                "id": "z"
+              }
+            ],
+            "id": "CL_OBS_STATUS",
+            "agencyID": "ABS",
+            "version": "1.0.0",
+            "isFinal": "true"
+          },
+          {
+            "Name": {
+              "_text": "Measure",
+              "lang": "en"
+            },
+            "Code": {
+              "Annotations": {
+                "Annotation": {
+                  "AnnotationType": "ORDER",
+                  "AnnotationText": {
+                    "_text": 1,
+                    "lang": "en"
+                  }
+                }
+              },
+              "Name": {
+                "_text": "Projected population",
+                "lang": "en"
+              },
+              "id": "POP_PROJ"
+            },
+            "id": "CL_POP_PROJ",
+            "agencyID": "ABS",
+            "version": "1.0.0",
+            "isFinal": "true"
+          },
+          {
+            "Name": {
+              "_text": "Sex",
+              "lang": "en"
+            },
+            "Code": [
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 3,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Persons",
+                  "lang": "en"
+                },
+                "id": "3"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 1,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Males",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "3"
+                  }
+                },
+                "id": "1"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "ORDER",
+                    "AnnotationText": {
+                      "_text": 2,
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Females",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "3"
+                  }
+                },
+                "id": "2"
+              }
+            ],
+            "id": "CL_SEX",
+            "agencyID": "ABS",
+            "version": "1.0.0",
+            "isFinal": "true"
+          },
+          {
+            "Name": {
+              "_text": "Unit of Measure",
+              "lang": "en"
+            },
+            "Code": [
+              {
+                "Name": {
+                  "_text": "Australian Dollars",
+                  "lang": "en"
+                },
+                "id": "AUD"
+              },
+              {
+                "Name": {
+                  "_text": "Number",
+                  "lang": "en"
+                },
+                "id": "NUM"
+              },
+              {
+                "Name": {
+                  "_text": "Percent",
+                  "lang": "en"
+                },
+                "id": "PCT"
+              },
+              {
+                "Name": {
+                  "_text": "Percentage Points",
+                  "lang": "en"
+                },
+                "id": "PCT_PTS"
+              },
+              {
+                "Name": {
+                  "_text": "Proportion",
+                  "lang": "en"
+                },
+                "id": "PROP"
+              },
+              {
+                "Name": {
+                  "_text": "Index Numbers",
+                  "lang": "en"
+                },
+                "id": "IN"
+              },
+              {
+                "Name": {
+                  "_text": "Index Points",
+                  "lang": "en"
+                },
+                "id": "IP"
+              },
+              {
+                "Name": {
+                  "_text": "Variance",
+                  "lang": "en"
+                },
+                "id": "VAR"
+              },
+              {
+                "Name": {
+                  "_text": "Not Applicable",
+                  "lang": "en"
+                },
+                "id": "NA"
+              },
+              {
+                "Name": {
+                  "_text": "Persons",
+                  "lang": "en"
+                },
+                "id": "PSNS"
+              },
+              {
+                "Name": {
+                  "_text": "Person Years",
+                  "lang": "en"
+                },
+                "id": "PSN_YR"
+              },
+              {
+                "Name": {
+                  "_text": "Jobs",
+                  "lang": "en"
+                },
+                "id": "JOB"
+              },
+              {
+                "Name": {
+                  "_text": "Milligrams",
+                  "lang": "en"
+                },
+                "id": "M_G"
+              },
+              {
+                "Name": {
+                  "_text": "Grams",
+                  "lang": "en"
+                },
+                "id": "G"
+              },
+              {
+                "Name": {
+                  "_text": "Kilograms",
+                  "lang": "en"
+                },
+                "id": "KG"
+              },
+              {
+                "Name": {
+                  "_text": "Carat (metric)",
+                  "lang": "en"
+                },
+                "id": "CT"
+              },
+              {
+                "Name": {
+                  "_text": "Megacarat (metric)",
+                  "lang": "en"
+                },
+                "id": "MCT"
+              },
+              {
+                "Name": {
+                  "_text": "Tonnes",
+                  "lang": "en"
+                },
+                "id": "T"
+              },
+              {
+                "Name": {
+                  "_text": "Megatonnes",
+                  "lang": "en"
+                },
+                "id": "MT"
+              },
+              {
+                "Name": {
+                  "_text": "Gigatonnes",
+                  "lang": "en"
+                },
+                "id": "GT"
+              },
+              {
+                "Name": {
+                  "_text": "Tonnes-kilometres",
+                  "lang": "en"
+                },
+                "id": "TKM"
+              },
+              {
+                "Name": {
+                  "_text": "Millimetres",
+                  "lang": "en"
+                },
+                "id": "M_M"
+              },
+              {
+                "Name": {
+                  "_text": "Metres",
+                  "lang": "en"
+                },
+                "id": "M"
+              },
+              {
+                "Name": {
+                  "_text": "Kilometres",
+                  "lang": "en"
+                },
+                "id": "KM"
+              },
+              {
+                "Name": {
+                  "_text": "Square Metres",
+                  "lang": "en"
+                },
+                "id": "SQM"
+              },
+              {
+                "Name": {
+                  "_text": "Square Kilometres",
+                  "lang": "en"
+                },
+                "id": "SQKM"
+              },
+              {
+                "Name": {
+                  "_text": "Hectares",
+                  "lang": "en"
+                },
+                "id": "HA"
+              },
+              {
+                "Name": {
+                  "_text": "Cubic Metres",
+                  "lang": "en"
+                },
+                "id": "CBM"
+              },
+              {
+                "Name": {
+                  "_text": "Litres",
+                  "lang": "en"
+                },
+                "id": "L"
+              },
+              {
+                "Name": {
+                  "_text": "Kilolitres",
+                  "lang": "en"
+                },
+                "id": "KL"
+              },
+              {
+                "Name": {
+                  "_text": "Megalitres",
+                  "lang": "en"
+                },
+                "id": "ML"
+              },
+              {
+                "Name": {
+                  "_text": "Gigalitres",
+                  "lang": "en"
+                },
+                "id": "GL"
+              },
+              {
+                "Name": {
+                  "_text": "Ampere",
+                  "lang": "en"
+                },
+                "id": "A"
+              },
+              {
+                "Name": {
+                  "_text": "Kilovolt Amperes",
+                  "lang": "en"
+                },
+                "id": "KVA"
+              },
+              {
+                "Name": {
+                  "_text": "Watts",
+                  "lang": "en"
+                },
+                "id": "W"
+              },
+              {
+                "Name": {
+                  "_text": "Kilowatts",
+                  "lang": "en"
+                },
+                "id": "KW"
+              },
+              {
+                "Name": {
+                  "_text": "Kilowatt Hours",
+                  "lang": "en"
+                },
+                "id": "KWH"
+              },
+              {
+                "Name": {
+                  "_text": "Gigawatt Hours",
+                  "lang": "en"
+                },
+                "id": "GWH"
+              },
+              {
+                "Name": {
+                  "_text": "Joules",
+                  "lang": "en"
+                },
+                "id": "J"
+              },
+              {
+                "Name": {
+                  "_text": "Kilojoules",
+                  "lang": "en"
+                },
+                "id": "KJ"
+              },
+              {
+                "Name": {
+                  "_text": "Megajoules",
+                  "lang": "en"
+                },
+                "id": "MJ"
+              },
+              {
+                "Name": {
+                  "_text": "Gigajoules",
+                  "lang": "en"
+                },
+                "id": "GJ"
+              },
+              {
+                "Name": {
+                  "_text": "Terajoules",
+                  "lang": "en"
+                },
+                "id": "TJ"
+              },
+              {
+                "Name": {
+                  "_text": "Petajoules",
+                  "lang": "en"
+                },
+                "id": "PJ"
+              },
+              {
+                "Name": {
+                  "_text": "Coulumb",
+                  "lang": "en"
+                },
+                "id": "C"
+              },
+              {
+                "Name": {
+                  "_text": "Candela",
+                  "lang": "en"
+                },
+                "id": "CD"
+              },
+              {
+                "Name": {
+                  "_text": "Kelvin",
+                  "lang": "en"
+                },
+                "id": "K"
+              },
+              {
+                "Name": {
+                  "_text": "Degrees Celsius",
+                  "lang": "en"
+                },
+                "id": "DEG_CEL"
+              },
+              {
+                "Name": {
+                  "_text": "Seconds",
+                  "lang": "en"
+                },
+                "id": "S"
+              },
+              {
+                "Name": {
+                  "_text": "Minutes",
+                  "lang": "en"
+                },
+                "id": "MIN"
+              },
+              {
+                "Name": {
+                  "_text": "Hours",
+                  "lang": "en"
+                },
+                "id": "HR"
+              },
+              {
+                "Name": {
+                  "_text": "Days",
+                  "lang": "en"
+                },
+                "id": "DAY"
+              },
+              {
+                "Name": {
+                  "_text": "Weeks",
+                  "lang": "en"
+                },
+                "id": "WK"
+              },
+              {
+                "Name": {
+                  "_text": "Months",
+                  "lang": "en"
+                },
+                "id": "MTH"
+              },
+              {
+                "Name": {
+                  "_text": "Years",
+                  "lang": "en"
+                },
+                "id": "YR"
+              },
+              {
+                "Name": {
+                  "_text": "Bytes",
+                  "lang": "en"
+                },
+                "id": "B"
+              },
+              {
+                "Name": {
+                  "_text": "Kilobytes",
+                  "lang": "en"
+                },
+                "id": "KB"
+              },
+              {
+                "Name": {
+                  "_text": "Megabytes",
+                  "lang": "en"
+                },
+                "id": "MB"
+              },
+              {
+                "Name": {
+                  "_text": "Gigabytes",
+                  "lang": "en"
+                },
+                "id": "GB"
+              },
+              {
+                "Name": {
+                  "_text": "Terabytes",
+                  "lang": "en"
+                },
+                "id": "TB"
+              },
+              {
+                "Name": {
+                  "_text": "Degrees",
+                  "lang": "en"
+                },
+                "id": "DEG"
+              },
+              {
+                "Name": {
+                  "_text": "Radians",
+                  "lang": "en"
+                },
+                "id": "RAD"
+              },
+              {
+                "Name": {
+                  "_text": "Dozen",
+                  "lang": "en"
+                },
+                "id": "DOZ"
+              },
+              {
+                "Name": {
+                  "_text": "Pairs",
+                  "lang": "en"
+                },
+                "id": "PR"
+              },
+              {
+                "Name": {
+                  "_text": "Rooms",
+                  "lang": "en"
+                },
+                "id": "ROOM"
+              },
+              {
+                "Name": {
+                  "_text": "Sites",
+                  "lang": "en"
+                },
+                "id": "SITE"
+              },
+              {
+                "Name": {
+                  "_text": "Bundles",
+                  "lang": "en"
+                },
+                "id": "BUNDLE"
+              },
+              {
+                "Name": {
+                  "_text": "Cartons",
+                  "lang": "en"
+                },
+                "id": "CARTON"
+              },
+              {
+                "Name": {
+                  "_text": "Unknown",
+                  "lang": "en"
+                },
+                "id": "UNK"
+              },
+              {
+                "Name": {
+                  "_text": "Pound Sterling",
+                  "lang": "en"
+                },
+                "id": "GBP"
+              },
+              {
+                "Name": {
+                  "_text": "Cents",
+                  "lang": "en"
+                },
+                "id": "CENT"
+              },
+              {
+                "Name": {
+                  "_text": "Families",
+                  "lang": "en"
+                },
+                "id": "FAM"
+              },
+              {
+                "Name": {
+                  "_text": "Households",
+                  "lang": "en"
+                },
+                "id": "HH"
+              },
+              {
+                "Name": {
+                  "_text": "Rate",
+                  "lang": "en"
+                },
+                "id": "RATE"
+              },
+              {
+                "Name": {
+                  "_text": "Australian Dollars per Employee",
+                  "lang": "en"
+                },
+                "id": "AUD_PER_EMP"
+              },
+              {
+                "Name": {
+                  "_text": "Australian Dollars per Person",
+                  "lang": "en"
+                },
+                "id": "AUD_PER_PSN"
+              },
+              {
+                "Name": {
+                  "_text": "Australian Dollars per Kilolitre",
+                  "lang": "en"
+                },
+                "id": "AUD_PER_KL"
+              },
+              {
+                "Name": {
+                  "_text": "Australian Dollars per Kilogram",
+                  "lang": "en"
+                },
+                "id": "AUD_PER_KG"
+              },
+              {
+                "Name": {
+                  "_text": "Australian Dollars per Tonne",
+                  "lang": "en"
+                },
+                "id": "AUD_PER_T"
+              },
+              {
+                "Name": {
+                  "_text": "Australian Dollars per Carat",
+                  "lang": "en"
+                },
+                "id": "AUD_PER_CT"
+              },
+              {
+                "Name": {
+                  "_text": "Australian Dollars per Square Metre",
+                  "lang": "en"
+                },
+                "id": "AUD_PER_SQM"
+              },
+              {
+                "Name": {
+                  "_text": "Australian Dollars per thousand cubic metres",
+                  "lang": "en"
+                },
+                "id": "AUD_PER_1000CBM"
+              },
+              {
+                "Name": {
+                  "_text": "Litres per 100 Kilometres",
+                  "lang": "en"
+                },
+                "id": "L_PER_100KM"
+              },
+              {
+                "Name": {
+                  "_text": "Litres per Kilometre",
+                  "lang": "en"
+                },
+                "id": "L_PER_KM"
+              },
+              {
+                "Name": {
+                  "_text": "Megalitres per Hectare",
+                  "lang": "en"
+                },
+                "id": "ML_PER_HA"
+              },
+              {
+                "Name": {
+                  "_text": "Tonnes per Hectare",
+                  "lang": "en"
+                },
+                "id": "T_PER_HA"
+              },
+              {
+                "Name": {
+                  "_text": "Persons per Square Kilometre",
+                  "lang": "en"
+                },
+                "id": "PSNS_PER_SQKM"
+              },
+              {
+                "Name": {
+                  "_text": "Kilograms per Tree",
+                  "lang": "en"
+                },
+                "id": "KG_PER_TREE"
+              }
+            ],
+            "id": "CL_UNIT_MEASURE",
+            "agencyID": "ABS",
+            "version": "1.0.0",
+            "isFinal": "true"
+          }
+        ]
+      },
+      "Concepts": {
+        "ConceptScheme": [
+          {
+            "Name": {
+              "_text": "Attribute Concepts",
+              "lang": "en"
+            },
+            "Concept": [
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "CONTEXT",
+                    "AnnotationText": {
+                      "_text": "If a unit multiplier exists the data is recorded according to the combination of the unit multiplier and the unit of measure.",
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Unit of Measure",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "Base unit in which the observation value is expressed.",
+                  "lang": "en"
+                },
+                "id": "UNIT_MEASURE"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "CONTEXT",
+                    "AnnotationText": {
+                      "_text": "Codes for unit of multiplier are the exponent in base 10 so that multiplying the observation by 10^UNIT_MULT gives a value expressed in the unit of measure.",
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Unit of Multiplier",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "The multiple of the unit of measure for which the data is expressed.",
+                  "lang": "en"
+                },
+                "id": "UNIT_MULT"
+              },
+              {
+                "Name": {
+                  "_text": "Observation Status",
+                  "lang": "en"
+                },
+                "id": "OBS_STATUS"
+              },
+              {
+                "Name": {
+                  "_text": "Observation Comment",
+                  "lang": "en"
+                },
+                "id": "OBS_COMMENT"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "CONTEXT",
+                    "AnnotationText": {
+                      "_text": "The use of reporting year end day also specifies that the reporting period of YYYY-A1 references an earlier period (e.g. 2018-A1 will be equivalent to 2017/18 and not 2018/19).",
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Reporting Year End Day",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "A month day that specifies the ending day of the reporting periods (e.g. YYYY-A1) within the datastucture.",
+                  "lang": "en"
+                },
+                "id": "REPYEAREND"
+              },
+              {
+                "Name": {
+                  "_text": "Reference Base Period",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "Reference Period that the value has been based against.",
+                  "lang": "en"
+                },
+                "id": "BASE_PERIOD"
+              }
+            ],
+            "id": "CS_ATTRIBUTE",
+            "agencyID": "ABS",
+            "version": "1.0.0",
+            "isFinal": "true"
+          },
+          {
+            "Name": {
+              "_text": "Common Concepts",
+              "lang": "en"
+            },
+            "Concept": [
+              {
+                "Name": {
+                  "_text": "Observation Value",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "The observed value of the variable identified by the series dimension values.",
+                  "lang": "en"
+                },
+                "id": "OBS_VALUE"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "CONTEXT",
+                    "AnnotationText": {
+                      "_text": "The measurement represented by each observation corresponds to a specific point in time (e.g. a single day) or a period (e.g. a month, a fiscal year, or a calendar year).",
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Time Period",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "Timespan or point in time for which the observation refers.",
+                  "lang": "en"
+                },
+                "id": "TIME_PERIOD"
+              },
+              {
+                "Name": {
+                  "_text": "Frequency",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "Rate at which data is collated.",
+                  "lang": "en"
+                },
+                "id": "FREQ"
+              },
+              {
+                "Name": {
+                  "_text": "Measure",
+                  "lang": "en"
+                },
+                "id": "MEASURE"
+              },
+              {
+                "Annotations": {
+                  "Annotation": {
+                    "AnnotationType": "OTHER_LINKS",
+                    "AnnotationText": {
+                      "_text": "https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Time+Series+Analysis:+The+Basics",
+                      "lang": "en"
+                    }
+                  }
+                },
+                "Name": {
+                  "_text": "Adjustment Type",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "An original time series can be decomposed into three components: the trend (the general direction of the series), the seasonal component (systematic, calendar related movements) and the irregular component (unsystematic, short term fluctuations). Seasonally adjusted series are produced by estimating the seasonal component and removing this from the original series. In most economic data the seasonal component is a combination of seasonal influences (e.g. the effect of the weather or social traditions) plus other kinds of calendar related variations such as Chinese New Year and Christmas. The seasonal adjustment methodology takes into account both seasonal and other calendar related factors that evolve over time to reflect changes in activity patterns.",
+                  "lang": "en"
+                },
+                "id": "TSEST"
+              }
+            ],
+            "id": "CS_COMMON",
+            "agencyID": "ABS",
+            "version": "1.0.0",
+            "isFinal": "true"
+          },
+          {
+            "Name": {
+              "_text": "Demographic Concepts",
+              "lang": "en"
+            },
+            "Concept": [
+              {
+                "Name": {
+                  "_text": "Age",
+                  "lang": "en"
+                },
+                "id": "AGE"
+              },
+              {
+                "Name": {
+                  "_text": "Age Group",
+                  "lang": "en"
+                },
+                "id": "AGE_GROUP"
+              },
+              {
+                "Name": {
+                  "_text": "Sex",
+                  "lang": "en"
+                },
+                "id": "SEX"
+              },
+              {
+                "Name": {
+                  "_text": "Occupation",
+                  "lang": "en"
+                },
+                "id": "OCCUPATION"
+              },
+              {
+                "Name": {
+                  "_text": "Family Type",
+                  "lang": "en"
+                },
+                "id": "FAMILY_TYPE"
+              },
+              {
+                "Name": {
+                  "_text": "Fertility Assumption",
+                  "lang": "en"
+                },
+                "id": "FERTILITY"
+              },
+              {
+                "Name": {
+                  "_text": "Household Type",
+                  "lang": "en"
+                },
+                "id": "HH_TYPE"
+              },
+              {
+                "Name": {
+                  "_text": "Indigenous status",
+                  "lang": "en"
+                },
+                "id": "IND_STATUS"
+              },
+              {
+                "Name": {
+                  "_text": "Infant Age",
+                  "lang": "en"
+                },
+                "id": "INF_AGE"
+              },
+              {
+                "Name": {
+                  "_text": "Interstate Migration",
+                  "lang": "en"
+                },
+                "id": "INTERSTATE_MIGRATION"
+              },
+              {
+                "Name": {
+                  "_text": "Marital status",
+                  "lang": "en"
+                },
+                "id": "MARITAL_STATUS"
+              },
+              {
+                "Name": {
+                  "_text": "Migration Type",
+                  "lang": "en"
+                },
+                "id": "MIGR_TYPE"
+              },
+              {
+                "Name": {
+                  "_text": "Month of occurence",
+                  "lang": "en"
+                },
+                "id": "MONTH_OCCUR"
+              },
+              {
+                "Name": {
+                  "_text": "Mortality Assumption",
+                  "lang": "en"
+                },
+                "id": "MORT_ASSUMP"
+              },
+              {
+                "Name": {
+                  "_text": "Net interstate migration",
+                  "lang": "en"
+                },
+                "id": "NIM"
+              },
+              {
+                "Name": {
+                  "_text": "Net Overseas Migration",
+                  "lang": "en"
+                },
+                "id": "NOM"
+              },
+              {
+                "Name": {
+                  "_text": "Nuptiality",
+                  "lang": "en"
+                },
+                "id": "NUPT"
+              },
+              {
+                "Name": {
+                  "_text": "Nuptial status",
+                  "lang": "en"
+                },
+                "id": "NUPT_STATUS"
+              },
+              {
+                "Name": {
+                  "_text": "Person Living Arrangement",
+                  "lang": "en"
+                },
+                "id": "PERS_LIV_ARR"
+              },
+              {
+                "Name": {
+                  "_text": "Plurality",
+                  "lang": "en"
+                },
+                "id": "PLURALITY"
+              },
+              {
+                "Name": {
+                  "_text": "Population Component",
+                  "lang": "en"
+                },
+                "id": "POP_COMP"
+              },
+              {
+                "Name": {
+                  "_text": "Projection Assumption",
+                  "lang": "en"
+                },
+                "id": "PROJ_ASSUM"
+              },
+              {
+                "Name": {
+                  "_text": "Projected population components",
+                  "lang": "en"
+                },
+                "id": "PROJ_POP_COMP"
+              },
+              {
+                "Name": {
+                  "_text": "Projection series",
+                  "lang": "en"
+                },
+                "id": "PROJ_SER"
+              },
+              {
+                "Name": {
+                  "_text": "Visa and Citizenship Groups",
+                  "lang": "en"
+                },
+                "id": "VISA"
+              }
+            ],
+            "id": "CS_DEMOG",
+            "agencyID": "ABS",
+            "version": "1.0.0",
+            "isFinal": "true"
+          },
+          {
+            "Name": {
+              "_text": "Demographic Concepts",
+              "lang": "en"
+            },
+            "Concept": [
+              {
+                "Name": {
+                  "_text": "Age",
+                  "lang": "en"
+                },
+                "id": "AGE"
+              },
+              {
+                "Name": {
+                  "_text": "Type of Visa",
+                  "lang": "en"
+                },
+                "id": "VISA"
+              },
+              {
+                "Name": {
+                  "_text": "Main projection series",
+                  "lang": "en"
+                },
+                "id": "PROJ_SER"
+              },
+              {
+                "Name": {
+                  "_text": "Projected population components",
+                  "lang": "en"
+                },
+                "id": "PROJ_POP_COMP"
+              },
+              {
+                "Name": {
+                  "_text": "Projection Assumption",
+                  "lang": "en"
+                },
+                "id": "PROJ_ASSUM"
+              },
+              {
+                "Name": {
+                  "_text": "Population Component",
+                  "lang": "en"
+                },
+                "id": "POP_COMP"
+              },
+              {
+                "Name": {
+                  "_text": "Plurality",
+                  "lang": "en"
+                },
+                "id": "PLURALITY"
+              },
+              {
+                "Name": {
+                  "_text": "Person Living Arrangement",
+                  "lang": "en"
+                },
+                "id": "PERS_LIV_ARR"
+              },
+              {
+                "Name": {
+                  "_text": "Nuptial status",
+                  "lang": "en"
+                },
+                "id": "NUPT_STATUS"
+              },
+              {
+                "Name": {
+                  "_text": "Nuptiality",
+                  "lang": "en"
+                },
+                "id": "NUPT"
+              },
+              {
+                "Name": {
+                  "_text": "Net Overseas Migration",
+                  "lang": "en"
+                },
+                "id": "NOM"
+              },
+              {
+                "Name": {
+                  "_text": "Net interstate migration",
+                  "lang": "en"
+                },
+                "id": "NIM"
+              },
+              {
+                "Name": {
+                  "_text": "Date of occurence",
+                  "lang": "en"
+                },
+                "id": "DATE_OCCUR"
+              },
+              {
+                "Name": {
+                  "_text": "Mortality assumption",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "Mortality assumption",
+                  "lang": "en"
+                },
+                "id": "MORT_ASSUMP"
+              },
+              {
+                "Name": {
+                  "_text": "Migration Type",
+                  "lang": "en"
+                },
+                "id": "MIGR_TYPE"
+              },
+              {
+                "Name": {
+                  "_text": "Marital status",
+                  "lang": "en"
+                },
+                "id": "MARITAL_STATUS"
+              },
+              {
+                "Name": {
+                  "_text": "Interstate Migration",
+                  "lang": "en"
+                },
+                "id": "INTERSTATE_MIGRATION"
+              },
+              {
+                "Name": {
+                  "_text": "Infant Age",
+                  "lang": "en"
+                },
+                "id": "INF_AGE"
+              },
+              {
+                "Name": {
+                  "_text": "Indigenous status",
+                  "lang": "en"
+                },
+                "id": "IND_STATUS"
+              },
+              {
+                "Name": {
+                  "_text": "Household Type",
+                  "lang": "en"
+                },
+                "id": "HH_TYPE"
+              },
+              {
+                "Name": {
+                  "_text": "Fertility assumption",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "Fertility assumption",
+                  "lang": "en"
+                },
+                "id": "FERTILITY"
+              },
+              {
+                "Name": {
+                  "_text": "Family Type",
+                  "lang": "en"
+                },
+                "id": "FAMILY_TYPE"
+              },
+              {
+                "Name": {
+                  "_text": "Occupation",
+                  "lang": "en"
+                },
+                "id": "OCCUPATION"
+              },
+              {
+                "Name": {
+                  "_text": "Sex",
+                  "lang": "en"
+                },
+                "id": "SEX"
+              },
+              {
+                "Name": {
+                  "_text": "Age Group",
+                  "lang": "en"
+                },
+                "id": "AGE_GROUP"
+              },
+              {
+                "Name": {
+                  "_text": "Month of occurence",
+                  "lang": "en"
+                },
+                "id": "MONTH_OCCUR"
+              },
+              {
+                "Name": {
+                  "_text": "Cause of death",
+                  "lang": "en"
+                },
+                "id": "DEATH_CAUSE"
+              },
+              {
+                "Name": {
+                  "_text": "Week of occurrence",
+                  "lang": "en"
+                },
+                "id": "WEEK_OCCUR"
+              },
+              {
+                "Name": {
+                  "_text": "Paternity assumption",
+                  "lang": "en"
+                },
+                "Description": {
+                  "_text": "Paternity assumption",
+                  "lang": "en"
+                },
+                "id": "PATERNITY"
+              }
+            ],
+            "id": "CS_DEMOG",
+            "agencyID": "ABS",
+            "version": "1.3.0",
+            "isFinal": "true"
+          },
+          {
+            "Name": {
+              "_text": "Geography Concepts",
+              "lang": "en"
+            },
+            "Concept": [
+              {
+                "Name": {
+                  "_text": "Region",
+                  "lang": "en"
+                },
+                "id": "REGION"
+              },
+              {
+                "Name": {
+                  "_text": "Region of Arrival",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "REGION"
+                  }
+                },
+                "id": "REGION_ARR"
+              },
+              {
+                "Name": {
+                  "_text": "Region of Departure",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "REGION"
+                  }
+                },
+                "id": "REGION_DEP"
+              },
+              {
+                "Name": {
+                  "_text": "Region Type",
+                  "lang": "en"
+                },
+                "id": "REGION_TYPE"
+              },
+              {
+                "Name": {
+                  "_text": "Geography Level",
+                  "lang": "en"
+                },
+                "id": "GEO_LEVEL"
+              },
+              {
+                "Name": {
+                  "_text": "State",
+                  "lang": "en"
+                },
+                "id": "STATE"
+              },
+              {
+                "Name": {
+                  "_text": "State of Origin",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "STATE"
+                  }
+                },
+                "id": "STATE_ORIGIN"
+              },
+              {
+                "Name": {
+                  "_text": "State of Destination",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "STATE"
+                  }
+                },
+                "id": "STATE_DEST"
+              },
+              {
+                "Name": {
+                  "_text": "State of Arrival",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "STATE"
+                  }
+                },
+                "id": "STATE_ARR"
+              },
+              {
+                "Name": {
+                  "_text": "State of Departure",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "STATE"
+                  }
+                },
+                "id": "STATE_DEP"
+              },
+              {
+                "Name": {
+                  "_text": "States and Territories",
+                  "lang": "en"
+                },
+                "id": "STATE_TERR"
+              },
+              {
+                "Name": {
+                  "_text": "Country",
+                  "lang": "en"
+                },
+                "id": "COUNTRY"
+              },
+              {
+                "Name": {
+                  "_text": "Country of Origin",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "COUNTRY"
+                  }
+                },
+                "id": "COUNTRY_ORIGIN"
+              },
+              {
+                "Name": {
+                  "_text": "Country of Destination",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "COUNTRY"
+                  }
+                },
+                "id": "COUNTRY_DEST"
+              },
+              {
+                "Name": {
+                  "_text": "Country of Birth",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "COUNTRY"
+                  }
+                },
+                "id": "COUNTRY_BIRTH"
+              },
+              {
+                "Name": {
+                  "_text": "Country of Stay/Residence",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "COUNTRY"
+                  }
+                },
+                "id": "COUNTRY_RESID"
+              },
+              {
+                "Name": {
+                  "_text": "Federal Electoral Division",
+                  "lang": "en"
+                },
+                "id": "FED"
+              },
+              {
+                "Name": {
+                  "_text": "Indigenous Region",
+                  "lang": "en"
+                },
+                "id": "IND_REGION"
+              },
+              {
+                "Name": {
+                  "_text": "Local Government Area",
+                  "lang": "en"
+                },
+                "id": "LGA"
+              },
+              {
+                "Name": {
+                  "_text": "Local Government Areas - 2011",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "LGA"
+                  }
+                },
+                "id": "LGA_2011"
+              },
+              {
+                "Name": {
+                  "_text": "Local Government Areas - 2016",
+                  "lang": "en"
+                },
+                "Parent": {
+                  "Ref": {
+                    "id": "LGA"
+                  }
+                },
+                "id": "LGA_2016"
+              },
+              {
+                "Name": {
+                  "_text": "Postal Area Code",
+                  "lang": "en"
+                },
+                "id": "POA"
+              },
+              {
+                "Name": {
+                  "_text": "Remoteness Area",
+                  "lang": "en"
+                },
+                "id": "REMOTE"
+              },
+              {
+                "Name": {
+                  "_text": "Statistical Area Level 2 (SA2)",
+                  "lang": "en"
+                },
+                "id": "SA2"
+              },
+              {
+                "Name": {
+                  "_text": "State Suburb",
+                  "lang": "en"
+                },
+                "id": "SSC"
+              }
+            ],
+            "id": "CS_GEOGRAPHY",
+            "agencyID": "ABS",
+            "version": "1.0.0",
+            "isFinal": "true"
+          }
+        ]
+      },
+      "DataStructures": {
+        "DataStructure": {
+          "Name": {
+            "_text": "Projected resident population, Aboriginal and Torres Strait Islander Australians, identification change series, sex and age groups by states and territories and Australia, 2021 to 2031",
+            "lang": "en"
+          },
+          "DataStructureComponents": {
+            "DimensionList": {
+              "Dimension": [
+                {
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "id": "MEASURE",
+                      "maintainableParentID": "CS_COMMON",
+                      "maintainableParentVersion": "1.0.0",
+                      "agencyID": "ABS",
+                      "package": "conceptscheme",
+                      "class": "Concept"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "id": "CL_POP_PROJ",
+                        "version": "1.0.0",
+                        "agencyID": "ABS",
+                        "package": "codelist",
+                        "class": "Codelist"
+                      }
+                    }
+                  },
+                  "id": "MEASURE",
+                  "position": "1"
+                },
+                {
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "id": "SEX",
+                      "maintainableParentID": "CS_DEMOG",
+                      "maintainableParentVersion": "1.0.0",
+                      "agencyID": "ABS",
+                      "package": "conceptscheme",
+                      "class": "Concept"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "id": "CL_SEX",
+                        "version": "1.0.0",
+                        "agencyID": "ABS",
+                        "package": "codelist",
+                        "class": "Codelist"
+                      }
+                    }
+                  },
+                  "id": "SEX_ABS",
+                  "position": "2"
+                },
+                {
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "id": "AGE",
+                      "maintainableParentID": "CS_DEMOG",
+                      "maintainableParentVersion": "1.0.0",
+                      "agencyID": "ABS",
+                      "package": "conceptscheme",
+                      "class": "Concept"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "id": "CL_AGE",
+                        "version": "1.0.0",
+                        "agencyID": "ABS",
+                        "package": "codelist",
+                        "class": "Codelist"
+                      }
+                    }
+                  },
+                  "id": "AGE",
+                  "position": "3"
+                },
+                {
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "id": "STATE_TERR",
+                      "maintainableParentID": "CS_GEOGRAPHY",
+                      "maintainableParentVersion": "1.0.0",
+                      "agencyID": "ABS",
+                      "package": "conceptscheme",
+                      "class": "Concept"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "id": "CL_ASGS_STATE",
+                        "version": "1.0.0",
+                        "agencyID": "ABS",
+                        "package": "codelist",
+                        "class": "Codelist"
+                      }
+                    }
+                  },
+                  "id": "ASGS_2011",
+                  "position": "4"
+                },
+                {
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "id": "PROJ_SER",
+                      "maintainableParentID": "CS_DEMOG",
+                      "maintainableParentVersion": "1.3.0",
+                      "agencyID": "ABS",
+                      "package": "conceptscheme",
+                      "class": "Concept"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "id": "CL_DEMOG_PROJ_SERIES",
+                        "version": "1.2",
+                        "agencyID": "ABS",
+                        "package": "codelist",
+                        "class": "Codelist"
+                      }
+                    }
+                  },
+                  "id": "SERIES",
+                  "position": "5"
+                },
+                {
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "id": "FREQ",
+                      "maintainableParentID": "CS_COMMON",
+                      "maintainableParentVersion": "1.0.0",
+                      "agencyID": "ABS",
+                      "package": "conceptscheme",
+                      "class": "Concept"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "id": "CL_FREQ",
+                        "version": "1.0.0",
+                        "agencyID": "ABS",
+                        "package": "codelist",
+                        "class": "Codelist"
+                      }
+                    }
+                  },
+                  "id": "FREQUENCY",
+                  "position": "6"
+                }
+              ],
+              "TimeDimension": {
+                "ConceptIdentity": {
+                  "Ref": {
+                    "id": "TIME_PERIOD",
+                    "maintainableParentID": "CS_COMMON",
+                    "maintainableParentVersion": "1.0.0",
+                    "agencyID": "ABS",
+                    "package": "conceptscheme",
+                    "class": "Concept"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "textType": "ObservationalTimePeriod"
+                  }
+                },
+                "id": "TIME_PERIOD",
+                "position": "7"
+              },
+              "id": "DimensionDescriptor"
+            },
+            "AttributeList": {
+              "Attribute": [
+                {
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "id": "UNIT_MEASURE",
+                      "maintainableParentID": "CS_ATTRIBUTE",
+                      "maintainableParentVersion": "1.0.0",
+                      "agencyID": "ABS",
+                      "package": "conceptscheme",
+                      "class": "Concept"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "id": "CL_UNIT_MEASURE",
+                        "version": "1.0.0",
+                        "agencyID": "ABS",
+                        "package": "codelist",
+                        "class": "Codelist"
+                      }
+                    }
+                  },
+                  "AttributeRelationship": {
+                    "None": ""
+                  },
+                  "id": "UNIT_MEASURE",
+                  "assignmentStatus": "Conditional"
+                },
+                {
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "id": "OBS_STATUS",
+                      "maintainableParentID": "CS_ATTRIBUTE",
+                      "maintainableParentVersion": "1.0.0",
+                      "agencyID": "ABS",
+                      "package": "conceptscheme",
+                      "class": "Concept"
+                    }
+                  },
+                  "LocalRepresentation": {
+                    "Enumeration": {
+                      "Ref": {
+                        "id": "CL_OBS_STATUS",
+                        "version": "1.0.0",
+                        "agencyID": "ABS",
+                        "package": "codelist",
+                        "class": "Codelist"
+                      }
+                    }
+                  },
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "id": "OBS_STATUS",
+                  "assignmentStatus": "Conditional"
+                },
+                {
+                  "ConceptIdentity": {
+                    "Ref": {
+                      "id": "OBS_COMMENT",
+                      "maintainableParentID": "CS_ATTRIBUTE",
+                      "maintainableParentVersion": "1.0.0",
+                      "agencyID": "ABS",
+                      "package": "conceptscheme",
+                      "class": "Concept"
+                    }
+                  },
+                  "AttributeRelationship": {
+                    "PrimaryMeasure": {
+                      "Ref": {
+                        "id": "OBS_VALUE"
+                      }
+                    }
+                  },
+                  "id": "OBS_COMMENT",
+                  "assignmentStatus": "Conditional"
+                }
+              ],
+              "id": "AttributeDescriptor"
+            },
+            "MeasureList": {
+              "PrimaryMeasure": {
+                "ConceptIdentity": {
+                  "Ref": {
+                    "id": "OBS_VALUE",
+                    "maintainableParentID": "CS_COMMON",
+                    "maintainableParentVersion": "1.0.0",
+                    "agencyID": "ABS",
+                    "package": "conceptscheme",
+                    "class": "Concept"
+                  }
+                },
+                "LocalRepresentation": {
+                  "TextFormat": {
+                    "textType": "Double"
+                  }
+                },
+                "id": "OBS_VALUE"
+              },
+              "id": "MeasureDescriptor"
+            }
+          },
+          "id": "ABORIGINAL_ID_POP_PROJ",
+          "agencyID": "ABS",
+          "version": "1.0",
+          "isFinal": "true"
+        }
+      },
+      "Constraints": {
+        "ContentConstraint": {
+          "Annotations": {
+            "Annotation": [
+              {
+                "AnnotationTitle": "A",
+                "AnnotationType": "ReleaseVersion"
+              },
+              {
+                "AnnotationTitle": 5643,
+                "AnnotationType": "sdmx_metrics",
+                "id": "obs_count"
+              }
+            ]
+          },
+          "Name": {
+            "_text": "Availability (A) for ABORIGINAL_ID_POP_PROJ",
+            "lang": "en"
+          },
+          "ConstraintAttachment": {
+            "Dataflow": {
+              "Ref": {
+                "id": "ABORIGINAL_ID_POP_PROJ",
+                "version": "1.0",
+                "agencyID": "ABS",
+                "package": "datastructure",
+                "class": "Dataflow"
+              }
+            }
+          },
+          "CubeRegion": {
+            "KeyValue": [
+              {
+                "Value": "POP_PROJ",
+                "id": "MEASURE"
+              },
+              {
+                "Value": [
+                  1,
+                  2,
+                  3
+                ],
+                "id": "SEX_ABS"
+              },
+              {
+                "Value": [
+                  8599,
+                  "A04",
+                  "A10",
+                  "A15",
+                  "A20",
+                  "A25",
+                  "A30",
+                  "A35",
+                  "A40",
+                  "A45",
+                  "A50",
+                  "A55",
+                  "A59",
+                  "A60",
+                  "A65",
+                  "A70",
+                  "A75",
+                  "A80",
+                  "TT"
+                ],
+                "id": "AGE"
+              },
+              {
+                "Value": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "id": "ASGS_2011"
+              },
+              {
+                "Value": 10,
+                "id": "SERIES"
+              },
+              {
+                "Value": "A",
+                "id": "FREQUENCY"
+              },
+              {
+                "TimeRange": {
+                  "StartPeriod": {
+                    "_text": "2021-01-01T00:00:00",
+                    "isInclusive": "true"
+                  },
+                  "EndPeriod": {
+                    "_text": "2031-12-31T00:00:00",
+                    "isInclusive": "true"
+                  }
+                },
+                "id": "TIME_PERIOD"
+              }
+            ],
+            "include": "true"
+          },
+          "id": "CR_A_ABORIGINAL_ID_POP_PROJ",
+          "agencyID": "ABS",
+          "version": "1.0",
+          "validFrom": "2025-03-25T01:00:00Z",
+          "isFinal": "false",
+          "type": "Actual"
+        }
+      }
+    }
+  }
+}

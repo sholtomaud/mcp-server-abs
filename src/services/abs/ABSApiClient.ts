@@ -121,9 +121,15 @@ export class ABSApiClient {
             }
         });
 
-        return options?.format?.startsWith('csv')
-            ? response.data
-            : this.xmlParser.parse(response.data);
+        if (options?.format?.startsWith('csv')) {
+            return response.data;
+        }
+
+        if (options?.format === 'jsondata' || (typeof response.data === 'object' && response.data !== null)) {
+            return response.data;
+        }
+
+        return this.xmlParser.parse(response.data);
     }
 
     private getAcceptHeader(format?: DataFormat): string {
