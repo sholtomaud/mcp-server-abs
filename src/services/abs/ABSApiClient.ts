@@ -51,20 +51,40 @@ export class ABSApiClient {
         return this.xmlParser.parse(response.data);
     }
 
+    async getDataFlow(agencyId: string, id: string, version: string = 'latest') {
+        logger.info('Fetching specific dataflow from ABS API', { agencyId, id, version });
+
+        const response = await this.api.get(`/rest/dataflow/${agencyId}/${id}/${version}`, {
+            headers: {
+                'Accept': 'application/vnd.sdmx.structure+xml;version=2.1'
+            },
+            params: {
+                references: 'all',
+                detail: 'full'
+            }
+        });
+
+        return this.xmlParser.parse(response.data);
+    }
+
     async getStructures(
         structureType: string,
         agencyId: string = 'ABS',
+        id: string = 'all',
+        version: string = 'latest',
         detail?: DetailLevel,
         references?: ReferenceScope
     ) {
         logger.info('Fetching structures from ABS API', {
             structureType,
             agencyId,
+            id,
+            version,
             detail,
             references
         });
 
-        const response = await this.api.get(`/rest/${structureType}/${agencyId}`, {
+        const response = await this.api.get(`/rest/${structureType}/${agencyId}/${id}/${version}`, {
             params: {
                 detail,
                 references
@@ -72,6 +92,10 @@ export class ABSApiClient {
         });
 
         return this.xmlParser.parse(response.data);
+    }
+
+    parseXml(xmlData: string) {
+        return this.xmlParser.parse(xmlData);
     }
 
     async getData(

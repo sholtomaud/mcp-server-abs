@@ -7,16 +7,19 @@ import { DataFlow, DataFlowCache, DataQueryOptions } from '../../types/abs.js';
 export class DataFlowService {
     private cache: DataFlowCache | null = null;
     private readonly cacheFilePath: string;
+    private readonly seedFilePath?: string;
     private readonly refreshIntervalMs: number;
     private readonly apiClient: ABSApiClient;
 
-    constructor(cacheFilePath: string, refreshIntervalHours: number = 24) {
+    constructor(cacheFilePath: string, refreshIntervalHours: number = 24, seedFilePath?: string) {
         this.cacheFilePath = cacheFilePath;
+        this.seedFilePath = seedFilePath;
         this.refreshIntervalMs = refreshIntervalHours * 60 * 60 * 1000;
         this.apiClient = new ABSApiClient();
 
         logger.info('DataFlowService initialized', {
             cacheFilePath,
+            seedFilePath,
             refreshIntervalHours,
             refreshIntervalMs: this.refreshIntervalMs
         });
@@ -56,6 +59,20 @@ export class DataFlowService {
     async getFlowData(flowId: string, dataKey: string = 'all', options?: DataQueryOptions) {
         logger.info('Getting flow data', { flowId, dataKey, options });
         return this.apiClient.getData(flowId, dataKey, options);
+    }
+
+    async getFlowMetadata(flowId: string) {
+        logger.info('Getting flow metadata', { flowId });
+
+        // Find the flow in cache to get agency and version
+        const flows = await this.getDataFlows();
+        const flow = flows.find(f => f.id === flowId);
+
+        if (!flow) {
+            throw new Error(`Dataflow not found: ${flowId}`);
+        }
+
+        return this.apiClient.getDataFlow(flow.agencyID, flow.id, flow.version);
     }
 
     private async fetchDataFlows(): Promise<DataFlow[]> {
@@ -115,7 +132,26 @@ export class DataFlowService {
             return cache;
         } catch (error) {
             if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
-                logger.info('No cache file found', { path: this.cacheFilePath });
+                logger.info('No cache file found, checking for seed file', { path: this.cacheFilePath });
+
+                if (this.seedFilePath) {
+                    try {
+                        const seedData = await fs.readFile(this.seedFilePath, 'utf8');
+                        logger.info('Found seed file, parsing data flows', { path: this.seedFilePath });
+                        const parsed = this.apiClient.parseXml(seedData);
+                        const flows = this.extractDataFlows(parsed);
+
+                        const newCache: DataFlowCache = {
+                            lastUpdated: new Date(),
+                            flows
+                        };
+
+                        await this.saveCache(newCache);
+                        return newCache;
+                    } catch (seedError) {
+                        logger.error('Error loading seed file', { seedError });
+                    }
+                }
                 return null;
             }
             logger.error('Error loading cache', { error });
