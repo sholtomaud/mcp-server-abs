@@ -90,7 +90,8 @@ export class DataFlowService {
         logger.debug('Extracting data flows from parsed XML');
         try {
             // Path to dataflows based on SDMX-ML format
-            const dataflows = parsed.Structure?.Dataflows?.Dataflow || [];
+            const dataflows = parsed.Structure?.Structures?.Dataflows?.Dataflow ||
+                             parsed.Structure?.Dataflows?.Dataflow || [];
             const flows = Array.isArray(dataflows) ? dataflows : [dataflows];
 
             return flows.map((flow: any) => {
